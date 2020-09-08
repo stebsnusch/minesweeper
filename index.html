@@ -1,0 +1,48 @@
+<html>
+<title>Minesweeper Game</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="src/assets/css/index.css" />
+</head>
+
+<body>
+    <main class="container">
+        <div id="intro">
+            <h1>Minesweeper Game</h1>
+            <p>In this page you can play the usual Minesweeper game.</p>
+        </div>
+
+        <div id="controls">
+            <span id="difficulty">Select Difficulty:</span>
+            <div id="buttons">
+                <button form="setup" type="button" onclick="setup(event, 'easy')">Easy</button>
+                <button form="setup" type="button" onclick="setup(event, 'medium')">Medium</button>
+                <button form="setup" type="button" onclick="setup(event, 'hard')">Hard</button>
+            </div>
+        </div>
+        <div id="playground">
+            <canvas id="board" onClick="clicked(event)" oncontextmenu="rightClicked(event)"></canvas>
+
+            <div id="game-data">
+                <div class="data">
+                    <span class="label">Mines:</span>
+                    <div class="display" id="mine-counter"></div>
+                </div>
+                <div class="data">
+                    <span class="label">Time:</span>
+                    <div class="display" id="seconds"></div>
+                </div>
+            </div>
+        </div>
+        <div id="credits">
+            <span>Made by <a href="https://github.com/stebsnusch" target="_blank">stebsnusch</a></span>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="src/assets/js/index.js"></script>
+
+</html>
