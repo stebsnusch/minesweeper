@@ -9,3 +9,5 @@ This is a simple minesweeper game I build in order to study.
 * Vanilla Javascript
 * HTML5
 * CSS
+* Gulp
+* Babel
